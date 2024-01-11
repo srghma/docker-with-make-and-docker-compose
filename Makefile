@@ -4,7 +4,7 @@
 
 DOCKER_ID_USER ?= srghma
 DOCKER_IMAGE_NAME ?= docker-with-make-and-docker-compose
-VERSION ?= v0.2
+VERSION ?= v0.3
 
 # docker run -it srghma/docker-with-make-and-docker-compose:latest cat /etc/os-release
 
