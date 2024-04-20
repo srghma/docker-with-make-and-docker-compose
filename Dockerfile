@@ -6,7 +6,8 @@ RUN apk add --update --no-cache python3 py3-pip python3-dev
 
 RUN apk --no-cache add curl
 
-ENV DOCKER_COMPOSE_VERSION v2.24.0-birthday.10
+# https://github.com/docker/compose/releases/
+ENV DOCKER_COMPOSE_VERSION v2.26.1
 
 RUN curl -L https://github.com/docker/compose/releases/download/$DOCKER_COMPOSE_VERSION/docker-compose-Linux-x86_64 -o /usr/local/bin/docker-compose \
   && chmod +x /usr/local/bin/docker-compose
